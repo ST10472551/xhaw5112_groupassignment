@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Empowering the Nation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="header-brand">
+                <div class="logo-circle">
+                    <img src="_assets/logo.jpg" alt="Empowering the Nation - Unity Logo" class="logo-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2250%22 fill=%22%231e40af%22/%3E%3Ctext x=%2250%22 y=%2260%22 text-anchor=%22middle%22 fill=%22white%22 font-size=%2240%22 font-weight=%22bold%22%3EE%3C/text%3E%3C/svg%3E'">
+                </div>
+                <div>
+                    <a href="index.html" class="brand-button">
+                        <div class="brand-title">EMPOWERING THE NATION</div>
+                        <div class="brand-subtitle">Skills Training & Development</div>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <a href="index.html" class="nav-button">Home</a>
+                <a href="about.html" class="nav-button active">About</a>
+                <a href="courses.html" class="nav-button">Courses</a>
+                <a href="quote.html" class="nav-button">Quote</a>
+                <a href="contact.html" class="nav-button">Contact</a>
+            </nav>
+
+            <!-- CTA and Mobile Menu -->
+            <div class="header-actions">
+                <a href="tel:+27111234567" class="cta-button">
+                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                    </svg>
+                    <span>Call Us</span>
+                </a>
+                
+                <button class="mobile-menu-button" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <svg class="icon menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                    <svg class="icon close-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav hidden" id="mobile-nav">
+            <div class="mobile-nav-content">
+                <a href="index.html" class="mobile-nav-button">Home</a>
+                <a href="about.html" class="mobile-nav-button active">About</a>
+                <a href="courses.html" class="mobile-nav-button">Courses</a>
+                <a href="quote.html" class="mobile-nav-button">Quote</a>
+                <a href="contact.html" class="mobile-nav-button">Contact</a>
+                <a href="tel:+27111234567" class="mobile-cta-button">
+                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                    </svg>
+                    <span>Call Us</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Hero -->
+        <section class="hero-section">
+            <div class="hero-content container">
+                <div class="grid grid-2" style="align-items: center; gap: 3rem;">
+                    <div class="hero-text-content">
+                        <div class="badge badge-blue mb-4">Our Story • Founded 2022</div>
+                        
+                        <h1 class="text-4xl font-bold mb-6">
+                            About Empowering<br>
+                            <span class="gradient-text">The Nation</span>
+                        </h1>
+                        
+                        <p class="text-xl mb-4" style="color: #dbeafe; line-height: 1.6;">
+                            Founded by <strong style="color: white;">Precious Radebe</strong> with a vision to transform lives through quality skills training for domestic workers and gardeners across South Africa.
+                        </p>
+                        
+                        <p class="text-lg mb-6" style="color: #bfdbfe; line-height: 1.6;">
+                            Our mission is simple yet powerful: enhance employability, build confidence, and create sustainable pathways for career advancement in essential professions.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <a href="courses.html" class="btn btn-primary">
+                                <span>View Our Courses</span>
+                                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                </svg>
+                            </a>
+                            <a href="contact.html" class="btn btn-secondary">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-image-content">
+                        <div class="founder-image-container">
+                            <!-- IMAGE TO REPLACE: Founder image -->
+                            <img src="_assets/yu.jpg" 
+                                 alt="Precious Radebe - Founder" 
+                                 class="founder-image"
+                                 onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600'">
+                            <div class="founder-image-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Values -->
+        <section class="section section-white">
+            <div class="container">
+                <div class="text-center mb-12">
+                    <div class="badge badge-orange mb-4">Our Core Values</div>
+                    <h2 class="text-3xl font-bold mb-4">
+                        What Drives Us <span class="gradient-text-blue">Forward</span>
+                    </h2>
+                    <p class="text-lg text-gray" style="color: var(--gray-600); max-width: 40rem; margin: 0 auto;">
+                        Our commitment to excellence, accessibility, and empowerment forms the foundation of everything we do.
+                    </p>
+                </div>
+
+                <div class="grid grid-4 gap-6">
+                    <div class="card">
+                        <div class="card-content text-center">
+                            <div class="value-icon blue">
+                                <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-lg mb-3">Excellence</h3>
+                            <p class="text-sm text-gray" style="color: var(--gray-600); line-height: 1.6;">
+                                Delivering high-quality training that meets and exceeds industry standards through comprehensive curriculum and experienced instructors.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content text-center">
+                            <div class="value-icon green">
+                                <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-lg mb-3">Accessibility</h3>
+                            <p class="text-sm text-gray" style="color: var(--gray-600); line-height: 1.6;">
+                                Making quality education affordable and accessible to all communities, breaking down barriers to professional development.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content text-center">
+                            <div class="value-icon orange">
+                                <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-lg mb-3">Empowerment</h3>
+                            <p class="text-sm text-gray" style="color: var(--gray-600); line-height: 1.6;">
+                                Building confidence and professional capabilities for lasting success, transforming lives through skills and opportunity.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content text-center">
+                            <div class="value-icon purple">
+                                <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-lg mb-3">Support</h3>
+                            <p class="text-sm text-gray" style="color: var(--gray-600); line-height: 1.6;">
+                                Ongoing mentorship and career guidance throughout your journey, ensuring long-term success beyond the classroom.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story & Mission -->
+        <section class="section section-gray">
+            <div class="container">
+                <div class="grid grid-2 gap-8">
+                    <!-- Our Story -->
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="badge badge-blue mb-4">Our Story</div>
+                            <h2 class="text-2xl font-bold mb-6">
+                                Born from a Vision of 
+                                <span class="gradient-text-blue">Equal Opportunity</span>
+                            </h2>
+                            
+                            <div class="space-y-4">
+                                <div class="story-item">
+                                    <div class="story-dot"></div>
+                                    <p>Founded in 2022 by Precious Radebe, Empowering the Nation emerged from a vision to bridge the skills gap in domestic work and gardening sectors.</p>
+                                </div>
+                                <div class="story-item">
+                                    <div class="story-dot"></div>
+                                    <p>We recognized that many talented individuals lacked access to professional training opportunities that could enhance their employability and earning potential.</p>
+                                </div>
+                                <div class="story-item">
+                                    <div class="story-dot"></div>
+                                    <p>Our programs are designed by industry experts and delivered by experienced instructors who understand the real-world needs of these professions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Our Mission -->
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="badge badge-green mb-4">Our Mission</div>
+                            <h2 class="text-2xl font-bold mb-6">
+                                Empowering Through
+                                <span class="gradient-text-green">Education</span>
+                            </h2>
+                            
+                            <div class="mission-box">
+                                <div class="mission-icon">
+                                    <svg fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"/>
+                                    </svg>
+                                </div>
+                                <p class="text-lg" style="color: var(--gray-700); line-height: 1.6;">
+                                    To empower domestic workers and gardeners with professional skills, knowledge, and confidence needed to excel in their careers and create pathways for advancement.
+                                </p>
+                            </div>
+                            
+                            <div class="values-list mt-6">
+                                <div class="value-item">
+                                    <svg class="value-icon" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>Quality Education</span>
+                                </div>
+                                <div class="value-item">
+                                    <svg class="value-icon" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>Career Growth</span>
+                                </div>
+                                <div class="value-item">
+                                    <svg class="value-icon" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>Life Transformation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Stats -->
+        <section class="section section-white">
+            <div class="container">
+                <div class="text-center mb-12">
+                    <div class="badge badge-orange mb-4">Our Impact</div>
+                    <h2 class="text-3xl font-bold mb-4">Making a Difference Through Education</h2>
+                    <p class="text-lg text-gray" style="color: var(--gray-600); max-width: 40rem; margin: 0 auto;">
+                        Since our founding, we've been committed to creating meaningful change in our communities through quality skills training.
+                    </p>
+                </div>
+                
+                <div class="grid grid-3 gap-8">
+                    <div class="impact-card text-center">
+                        <div class="impact-number">500+</div>
+                        <div class="impact-label">Lives Transformed</div>
+                        <p class="impact-description">Students have completed our training programs and advanced their careers</p>
+                    </div>
+                    <div class="impact-card text-center">
+                        <div class="impact-number">7</div>
+                        <div class="impact-label">Training Programs</div>
+                        <p class="impact-description">Comprehensive courses designed to meet industry demands</p>
+                    </div>
+                    <div class="impact-card text-center">
+                        <div class="impact-number">95%</div>
+                        <div class="impact-label">Success Rate</div>
+                        <p class="impact-description">Of graduates report improved employment opportunities</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-overlay"></div>
+            <div class="container cta-content text-center">
+                <h2 class="cta-title">Join Our Community of Success</h2>
+                <p class="cta-description">
+                    Become part of our growing family of skilled professionals who are transforming their careers and communities.
+                </p>
+                
+                <div class="cta-buttons">
+                    <a href="courses.html" class="btn btn-white">
+                        <span>View Our Courses</span>
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="contact.html" class="btn btn-primary">
+                        <span>Get in Touch</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <div class="logo-circle-small">
+                           
+                            <img src="_assets/logo.jpg" alt="Empowering the Nation" class="logo-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2250%22 fill=%22%231e40af%22/%3E%3Ctext x=%2250%22 y=%2260%22 text-anchor=%22middle%22 fill=%22white%22 font-size=%2240%22 font-weight=%22bold%22%3EE%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <div>
+                            <div class="footer-brand-title">EMPOWERING THE NATION</div>
+                            <div class="footer-brand-subtitle">Skills Training & Development</div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Transforming lives through quality skills training and professional development since 2022.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="courses.html">Courses</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-heading">Our Programs</h3>
+                    <div class="footer-text">
+                        <div>6-Month Comprehensive Courses</div>
+                        <div>6-Week Intensive Training</div>
+                        <div>Custom Corporate Programs</div>
+                        <div>Skills Certification</div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-heading">Contact Info</h3>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                            <span>+27 11 123 4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                            <span>info@empoweringthenation.co.za</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>123 Training Street<br>Johannesburg, South Africa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Empowering the Nation. Founded by Precious Radebe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <style>
+        /* About Page Specific Styles */
+        .hero-text-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .founder-image-container {
+            position: relative;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: var(--shadow-2xl);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .founder-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .founder-image-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            background: linear-gradient(transparent, rgba(0,0,0,0.3));
+        }
+
+        /* Value Icons */
+        .value-icon {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.5rem;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .value-icon.blue {
+            background: var(--blue-100);
+        }
+
+        .value-icon.blue .icon {
+            color: var(--blue-600);
+        }
+
+        .value-icon.green {
+            background: var(--green-100);
+        }
+
+        .value-icon.green .icon {
+            color: var(--green-600);
+        }
+
+        .value-icon.orange {
+            background: var(--orange-100);
+        }
+
+        .value-icon.orange .icon {
+            color: var(--orange-600);
+        }
+
+        .value-icon.purple {
+            background: var(--purple-100);
+        }
+
+        .value-icon.purple .icon {
+            color: var(--purple-600);
+        }
+
+        /* Story Items */
+        .story-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .story-dot {
+            width: 0.5rem;
+            height: 0.5rem;
+            background: var(--blue-500);
+            border-radius: 50%;
+            margin-top: 0.5rem;
+            flex-shrink: 0;
+        }
+
+        .space-y-4 > * + * {
+            margin-top: 1rem;
+        }
+
+        /* Mission Box */
+        .mission-box {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            background: var(--green-50);
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            border-left: 4px solid var(--green-500);
+        }
+
+        .mission-icon {
+            width: 2rem;
+            height: 2rem;
+            background: var(--green-100);
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 0.25rem;
+        }
+
+        .mission-icon svg {
+            width: 1rem;
+            height: 1rem;
+            color: var(--green-600);
+        }
+
+        /* Values List */
+        .values-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .value-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            background: var(--gray-50);
+            border-radius: 0.5rem;
+        }
+
+        .value-item svg {
+            width: 1.25rem;
+            height: 1.25rem;
+            color: var(--green-500);
+        }
+
+        /* Impact Cards */
+        .impact-card {
+            padding: 2rem;
+        }
+
+        .impact-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--blue-600);
+            margin-bottom: 0.5rem;
+        }
+
+        .impact-label {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--gray-800);
+            margin-bottom: 0.5rem;
+        }
+
+        .impact-description {
+            color: var(--gray-600);
+            line-height: 1.6;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .founder-image {
+                height: 300px;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            .hero-buttons .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-text-content {
+                max-width: 600px;
+            }
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Quote - Empowering the Nation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="header-brand">
+                <div class="logo-circle">
+                    <!-- IMAGE TO REPLACE: ../logo.png -->
+                    <img src="_assets/logo.jpg" alt="Empowering the Nation - Unity Logo" class="logo-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2250%22 fill=%22%231e40af%22/%3E%3Ctext x=%2250%22 y=%2260%22 text-anchor=%22middle%22 fill=%22white%22 font-size=%2240%22 font-weight=%22bold%22%3EE%3C/text%3E%3C/svg%3E'">
+                </div>
+                <div>
+                    <a href="index.html" class="brand-button">
+                        <div class="brand-title">EMPOWERING THE NATION</div>
+                        <div class="brand-subtitle">Skills Training & Development</div>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <a href="index.html" class="nav-button">Home</a>
+                <a href="about.html" class="nav-button">About</a>
+                <a href="courses.html" class="nav-button">Courses</a>
+                <a href="quote.html" class="nav-button active">Quote</a>
+                <a href="contact.html" class="nav-button">Contact</a>
+            </nav>
+
+            <!-- CTA and Mobile Menu -->
+            <div class="header-actions">
+                <a href="tel:+27111234567" class="cta-button">
+                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                    </svg>
+                    <span>Call Us</span>
+                </a>
+                
+                <button class="mobile-menu-button" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <svg class="icon menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                    <svg class="icon close-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav hidden" id="mobile-nav">
+            <div class="mobile-nav-content">
+                <a href="index.html" class="mobile-nav-button">Home</a>
+                <a href="about.html" class="mobile-nav-button">About</a>
+                <a href="courses.html" class="mobile-nav-button">Courses</a>
+                <a href="quote.html" class="mobile-nav-button active">Quote</a>
+                <a href="contact.html" class="mobile-nav-button">Contact</a>
+                <a href="tel:+27111234567" class="mobile-cta-button">
+                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                    </svg>
+                    <span>Call Us</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="section section-gray">
+            <div class="container" style="max-width: 64rem;">
+                <div class="text-center mb-12">
+                    <div class="badge badge-blue mb-4">Training Calculator</div>
+                    <h1 class="text-4xl font-bold mb-4">
+                        Build Your Perfect <span class="gradient-text">Learning Path</span>
+                    </h1>
+                    <p class="text-lg text-gray" style="color: var(--gray-600); max-width: 40rem; margin: 0 auto;">
+                        Select the courses that match your career goals and get an instant quote with automatic bundle discounts applied.
+                    </p>
+                </div>
+
+                <!-- Simple Quote Form -->
+                <div class="card">
+                    <div class="card-content">
+                        <h2 class="text-2xl font-bold mb-6">Select Your Courses</h2>
+                        
+                        <form id="quoteForm" class="form-grid form-grid-2">
+                            <!-- 6-Month Courses -->
+                            <div class="form-group">
+                                <label class="form-label">6-Month Programs (R1,500 each)</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" name="courses" value="first-aid" data-price="1500">
+                                        <span>First Aid Training</span>
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" name="courses" value="sewing" data-price="1500">
+                                        <span>Sewing & Tailoring</span>
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" name="courses" value="landscaping" data-price="1500">
+                                        <span>Landscaping</span>
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" name="courses" value="life-skills" data-price="1500">
+                                        <span>Life Skills</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- 6-Week Courses -->
+                            <div class="form-group">
+                                <label class="form-label">6-Week Courses (R750 each)</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" name="courses" value="child-minding" data-price="750">
+                                        <span>Child Minding</span>
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" name="courses" value="cooking" data-price="750">
+                                        <span>Cooking</span>
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" name="courses" value="garden-maintenance" data-price="750">
+                                        <span>Garden Maintenance</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Student Info -->
+                            <div class="form-group" style="grid-column: 1 / -1;">
+                                <label class="form-label">Student Information</label>
+                                <div class="form-grid form-grid-2">
+                                    <input type="text" class="form-input" placeholder="Full Name" required>
+                                    <input type="email" class="form-input" placeholder="Email Address" required>
+                                    <input type="tel" class="form-input" placeholder="Phone Number" required>
+                                    <input type="text" class="form-input" placeholder="Preferred Start Date">
+                                </div>
+                            </div>
+
+                            <!-- Quote Summary -->
+                            <div class="form-group" style="grid-column: 1 / -1;">
+                                <div class="quote-summary-card">
+                                    <h3 class="font-bold text-lg mb-4">Your Quote Summary</h3>
+                                    <div id="quoteSummary">
+                                        <p class="text-gray">Select courses to see your quote</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group" style="grid-column: 1 / -1;">
+                                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                                    </svg>
+                                    Request Detailed Quote
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Discount Info -->
+                <div class="section">
+                    <div class="text-center mb-8">
+                        <div class="badge badge-green mb-4">Savings Breakdown</div>
+                        <h2 class="text-3xl font-bold">
+                            Maximize Your <span class="gradient-text-green">Investment</span>
+                        </h2>
+                    </div>
+
+                    <div class="grid grid-3 gap-8">
+                        <div class="card">
+                            <div class="card-content text-center">
+                                <div class="stat-icon-circle blue">
+                                    <span class="text-2xl font-bold" style="color: white;">5%</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-2">2 Courses</h3>
+                                <p class="text-gray mb-4" style="color: var(--gray-600);">Perfect for getting started with essential skills training</p>
+                                <div style="background: var(--blue-50); padding: 0.75rem; border-radius: 0.5rem;">
+                                    <div class="text-sm text-gray" style="color: var(--gray-600);">Example: First Aid + Sewing</div>
+                                    <div class="font-semibold">R2,850 <span class="text-sm text-gray" style="text-decoration: line-through; color: var(--gray-500);">R3,000</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="transform: scale(1.05); box-shadow: var(--shadow-2xl);">
+                            <div class="card-content text-center" style="background: linear-gradient(to bottom right, #10b981, #059669); color: white;">
+                                <div style="width: 4rem; height: 4rem; background: rgba(255, 255, 255, 0.2); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255, 255, 255, 0.3);">
+                                    <span class="text-2xl font-bold">10%</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-2">3 Courses</h3>
+                                <div class="badge" style="background: rgba(255, 255, 255, 0.1); color: white; border: 1px solid rgba(255, 255, 255, 0.2); margin-bottom: 1rem;">
+                                    Most Popular
+                                </div>
+                                <p class="mb-4" style="color: #d1fae5;">Ideal combination for comprehensive skill development</p>
+                                <div style="background: rgba(255, 255, 255, 0.1); padding: 0.75rem; border-radius: 0.5rem; border: 1px solid rgba(255, 255, 255, 0.2);">
+                                    <div class="text-sm" style="color: #d1fae5;">Example: 2 Long + 1 Short Course</div>
+                                    <div class="font-semibold">R3,375 <span class="text-sm" style="text-decoration: line-through; color: #d1fae5;">R3,750</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-content text-center">
+                                <div class="stat-icon-circle orange">
+                                    <span class="text-2xl font-bold" style="color: white;">15%</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-2">4+ Courses</h3>
+                                <p class="text-gray mb-4" style="color: var(--gray-600);">Maximum savings for comprehensive professional development</p>
+                                <div style="background: var(--orange-50); padding: 0.75rem; border-radius: 0.5rem;">
+                                    <div class="text-sm text-gray" style="color: var(--gray-600);">Example: All 4 Long Courses</div>
+                                    <div class="font-semibold">R5,100 <span class="text-sm text-gray" style="text-decoration: line-through; color: var(--gray-500);">R6,000</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <div class="logo-circle-small">
+                          
+                            <img src="_assets/logo.jpg" alt="Empowering the Nation" class="logo-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2250%22 fill=%22%231e40af%22/%3E%3Ctext x=%2250%22 y=%2260%22 text-anchor=%22middle%22 fill=%22white%22 font-size=%2240%22 font-weight=%22bold%22%3EE%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <div>
+                            <div class="footer-brand-title">EMPOWERING THE NATION</div>
+                            <div class="footer-brand-subtitle">Skills Training & Development</div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Transforming lives through quality skills training and professional development since 2022.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="courses.html">Courses</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-heading">Our Programs</h3>
+                    <div class="footer-text">
+                        <div>6-Month Comprehensive Courses</div>
+                        <div>6-Week Intensive Training</div>
+                        <div>Custom Corporate Programs</div>
+                        <div>Skills Certification</div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-heading">Contact Info</h3>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                            <span>+27 11 123 4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                            <span>info@empoweringthenation.co.za</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>123 Training Street<br>Johannesburg, South Africa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Empowering the Nation. Founded by Precious Radebe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Simple quote calculator
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('quoteForm');
+            const checkboxes = form.querySelectorAll('input[type="checkbox"]');
+            const quoteSummary = document.getElementById('quoteSummary');
+
+            function calculateQuote() {
+                let subtotal = 0;
+                let selectedCourses = [];
+
+                checkboxes.forEach(checkbox => {
+                    if (checkbox.checked) {
+                        const price = parseInt(checkbox.dataset.price);
+                        subtotal += price;
+                        selectedCourses.push(checkbox.nextElementSibling.textContent);
+                    }
+                });
+
+                // Calculate discount
+                let discountRate = 0;
+                if (selectedCourses.length >= 4) discountRate = 0.15;
+                else if (selectedCourses.length === 3) discountRate = 0.10;
+                else if (selectedCourses.length === 2) discountRate = 0.05;
+
+                const discountAmount = subtotal * discountRate;
+                const total = subtotal - discountAmount;
+
+                // Update summary
+                if (selectedCourses.length > 0) {
+                    quoteSummary.innerHTML = `
+                        <div class="space-y-2">
+                            ${selectedCourses.map(course => `
+                                <div class="flex justify-between text-sm">
+                                    <span>${course}</span>
+                                    <span>R${parseInt(course.includes('R1,500') ? 1500 : 750).toLocaleString()}</span>
+                                </div>
+                            `).join('')}
+                            <div class="border-t pt-2 mt-2">
+                                <div class="flex justify-between">
+                                    <span>Subtotal:</span>
+                                    <span>R${subtotal.toLocaleString()}</span>
+                                </div>
+                                ${discountRate > 0 ? `
+                                    <div class="flex justify-between text-green-600">
+                                        <span>Discount (${discountRate * 100}%):</span>
+                                        <span>-R${discountAmount.toLocaleString()}</span>
+                                    </div>
+                                ` : ''}
+                                <div class="flex justify-between font-bold text-lg">
+                                    <span>Total:</span>
+                                    <span>R${total.toLocaleString()}</span>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    quoteSummary.innerHTML = '<p class="text-gray">Select courses to see your quote</p>';
+                }
+            }
+
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', calculateQuote);
+            });
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you! Your quote request has been submitted. We will contact you shortly with more details.');
+                form.reset();
+                calculateQuote();
+            });
+        });
+    </script>
+</body>
+</html>
